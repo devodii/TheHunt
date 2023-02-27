@@ -1,0 +1,17 @@
+  li:nth-child(1):hover ~ .desc-container, .desc-container:hover {
+    opacity: 1;
+    pointer-events: auto;    
+  }
+  li:nth-child(2):hover ~ .second-desc-container, .second-desc-container:hover {
+    opacity: 1;
+    pointer-events: auto;    
+  }
+  li:nth-child(3):hover ~ .third-desc-container, .third-desc-container:hover {
+    opacity: 1;
+    pointer-events: auto;    
+  }
+
+  .react-reveal {
+    animation-duration: 4000ms;
+  }
+
