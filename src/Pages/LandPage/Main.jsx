@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import NewsLetter from '../../Components/Form/NewsLetter/NewsLetter'
 import SectionOne from './Sections/Section[1]'
 import SectionTwo from './Sections/Section[2]'
 import SectionThree from './Sections/Section[3]'
@@ -15,6 +16,7 @@ const Main = () => {
         <SectionThree />
         <SectionFOur />
         <SectionFive />
+        <NewsLetter />
     </Container>
      
     </>

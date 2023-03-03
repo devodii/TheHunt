@@ -1,0 +1,4 @@
+input:focus + label, input:valid + label {
+    top: -24px;
+    font-size: 14px;
+}

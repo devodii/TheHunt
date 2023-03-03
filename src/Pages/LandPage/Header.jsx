@@ -27,7 +27,7 @@ const Header = () => {
               let description;
               if (index === 1 ) {
                 description = (
-                  <div className='absolute -bottom-9 left-[400px] text-white flex gap-2 px-10 py-4 rounded-md desc-container opacity-0 pointer-events-none bg-home-bg'>
+                  <div className='absolute -bottom-9 left-[400px] text-white flex gap-2 py-4 px-10 rounded-md desc-container opacity-0 pointer-events-none bg-home-bg'>
                     {[
                       ["How it works"],
                       ["Clients"],

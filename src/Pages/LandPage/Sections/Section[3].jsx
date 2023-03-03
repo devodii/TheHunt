@@ -39,7 +39,7 @@ const SectionThree = () => {
             <Zoom left>
             <div className='flex flex-col gap-3 py-10 px-10 rounded-md min-w-[350px] flex-1 md:flex-[0.5] lg:flex-[0.3] mx-auto bg-gradient-to-bl from-indigo-800 to bg-home-bg after flex-wrap'>
                 <div className='relative'>
-                    <img src={each.imageUrl} alt={each.name} className="rounded-full h-20 ring ring-white relative" />
+                    {<img src={each.imageUrl} alt={each.name} className="rounded-full h-20 ring ring-white relative" />}
                     <GoVerified className='absolute top-1 left-[58px] text-[27px] text-home-bg bg-white rounded-full'/>
                 </div>
                 <p className='font-semibold  opacity-95 text-xl md:text-2xl  '>{each.name}</p>
