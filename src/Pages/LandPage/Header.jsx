@@ -12,7 +12,7 @@ const Header = () => {
     <>
      <Container>
       <main className='flex flex-1 justify-between items-center bg-home-bg px-4 h-18  fixed-to-top max-w-7xl mx-auto -mt-[0.7rem] -pt-2 md:-mt-1 lg:mt-0 py-2 z-10' >
-        <img src="Assets/Logo/TheHunt(bg).png" alt="The-Hunt" className='w-44 -ml-4  mt-2 cursor-pointer object-contain mt-1' />
+        <img src="Assets/Logo/TheHunt(bg).png" alt="The-Hunt" className='w-44 -ml-4  mt-2 cursor-pointer object-contain' />
         <section className='flex items-center space-x-4'>
         <nav className='text-nav-text lw:hidden lg:block'>
           <ul className='flex space-x-5 items-center' >           
