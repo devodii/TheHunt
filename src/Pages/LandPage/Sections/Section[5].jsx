@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 import {Zoom, Roll} from "react-reveal"
 import {GoVerified} from "react-icons/go"
+import IntersectingObserver from '../../../Components/IntersectingObs'
+
 const SectionFive = () => {
+  
   return (
     <>
-      <Container className='mt-12 md:mt-16 flex flex-col gap-4'>
+      <Container className='mt-12 md:mt-16 flex flex-col gap-4' >
             <span className=' bg-slate-200 h-56'>
                 <Zoom>
                     <h1 className='text-2xl md:text-3xl lg:text-4xl text-center font-medium  text-home-bg mt-9'>Merits of using TheHunt</h1>

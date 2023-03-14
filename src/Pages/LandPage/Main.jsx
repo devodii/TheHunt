@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Footer from '../../Components/Footer'
 import NewsLetter from '../../Components/Form/NewsLetter/NewsLetter'
@@ -9,6 +9,9 @@ import SectionFOur from './Sections/Section[4]'
 import SectionFive from './Sections/Section[5]'
 
 const Main = () => {
+  useEffect(() => {
+    
+  })
   return (
     <>
     <Container className='pt-24 max-w-7xl mx-auto w-full flex flex-col gap-4 md:gap-7 bg-home-bg overflow-hidden'>

@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import SIgnUp from './Components/Form/SignUp/SIgnUp';
 import Index from './Pages/LandPage';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <>
     <Routes>
       <Route exact path="/" element={<Index />} />
-      <Route path="/r" element={"Hello"} />
+      <Route path="/signup" element={<SIgnUp />} />
     </Routes>
     
     </>

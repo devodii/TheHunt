@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 import { Fade, Bounce } from 'react-reveal'
 import { useInView } from 'react-intersection-observer'
 const SectionTwo = () => {
+  const [visible, setVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+       setVisible(true)
+    },
+    {threshold: 0}
+    );
+    observer.observe(ref.current)
+  })
   
   return (
     <>
-    <Container className='flex flex-col gap-5 md:gap-7 mt-7 lg:mt-12'>
+        <div ref={ref}>
+        {visible && 
+    <Container className='flex flex-col gap-5 md:gap-7 mt-7 lg:mt-12' ref={ref}>
+        
       <p className='text-center text-base lg:text-xl'>Work with some of the worlds Largest firms.</p>
         <ul className=' mx-w-xl grid grid-rows-8 grid-flow-row '>
             {[
@@ -37,7 +51,10 @@ const SectionTwo = () => {
             </div>
         </section>
         </Fade>
+        
     </Container>
+    }
+    </div>
     </>
   )
 }

@@ -38,7 +38,7 @@ const SectionOne = () => {
 
   )
 }
-const Container = styled.main`
+const Container = styled.div`
     
 `
 

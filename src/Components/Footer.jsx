@@ -5,9 +5,15 @@ import {BsTwitter} from "react-icons/bs"
 import {FaFacebookF, FaDiscord} from "react-icons/fa"
 import { Link } from 'react-router-dom'
 const Footer = () => {
+    const socials = [
+        {name: "LinkedIn", url: "", icon: <GrLinkedinOption className='text-xl md:text-2xl' />},
+        {name: "Twitter", url: "", icon: <BsTwitter className='text-xl md:text-2xl' />},
+        {name: "Facebook", url: "", icon: <FaFacebookF className='text-xl md:text-2xl' />},
+        {name: "Discord", url: "", icon: <FaDiscord className='text-xl md:text-2xl' />},
+    ]
   return (
     <>
-      <Container className='-mt-20 pb-20 ml-5'>
+      <Container className='-mt-14 pb-20 ml-5'>
         <section>
             <div className='flex flex-col'>
                 <figure>
@@ -15,44 +21,25 @@ const Footer = () => {
                     <figcaption className='tracking-wide text-[16px] md:text-xl'>SignUp, Discover, Profit.</figcaption>
                 </figure>
                 <ul className='flex gap-3 mt-3 items-center'>
-                    <li>
-                        <a href={"https://www.usebraintrust.com/"}
-                        rel={"noreferral noopener"}
-                        target="_blank"
-                        >
-                            <GrLinkedinOption className='text-xl md:text-2xl' />
-                        </a>
-                    </li>
-                    <li>
-                        <a href={"https://twitter.com/usethehunt"}
-                        rel={"noreferral noopener"}
-                        target="_blank"
-                        >
-                            <BsTwitter className='text-xl md:text-2xl' />
-                        </a>
-                    </li>
-                    <li>
-                        <a href={"https://twitter.com/usethehunt"}
-                        rel={"noreferral noopener"}
-                        target="_blank"
-                        >
-                            <FaFacebookF className='text-xl md:text-2xl' />
-                        </a>
-                    </li>
-                    <li>
-                        <a href={"https://twitter.com/usethehunt"}
-                        rel={"noreferral noopener"}
-                        target="_blank"
-                        >
-                            <FaDiscord className='text-xl md:text-2xl' />
-                        </a>
-                    </li>
+                    {
+                        socials.map(({name, url, icon}) => (
+                            <li key={name}>
+                                <a
+                                 href={url}
+                                 rel={'noreferral noopener'}
+                                 target='_blank'
+                                 >
+                                    {icon}
+                                </a>
+                            </li>
+                        ))
+                    }
             </ul>
 
             </div>
 
             <div className='flex flex-col'>
-                <h3 className='text-xl tracking-wide font-semibold'>Companies</h3>
+                <h3 className='text-xl tracking-wide font-semibold mb-1'>Companies</h3>
                 <ul className='flex flex-col gap-1'>
                     <li>
                         <Link>How it works</Link>
@@ -70,7 +57,7 @@ const Footer = () => {
             </div>
 
             <div className='flex flex-col'>
-                <h3 className='text-xl tracking-wide font-semibold'>Talents</h3>
+                <h3 className='text-xl tracking-wide font-semibold mb-1'>Talents</h3>
                 <ul className='flex flex-col gap-1'>
                     <li>
                         <Link>How it works</Link>

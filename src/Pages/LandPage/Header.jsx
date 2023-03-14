@@ -92,9 +92,12 @@ const Header = () => {
             <button className='ring ring-white ring-[2px] rounded-full py-1 px-4 hover:btn-hover transition-all duration-200 '>
               Recruit
             </button>
-            <button className=' bg-mid-white text-home-bg rounded-full py-1 px-4 hover:btn-hover2 transition-all duration-200 '>
-              Sign up
-            </button>
+            <Link to={'/signup'}>
+              <button className=' bg-mid-white text-home-bg rounded-full py-1 px-4 hover:btn-hover2 transition-all duration-200 '>
+                Sign up
+              </button>
+            </Link>
+           
           </ul>
         </nav>
        
